@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Barrierefreies Suchformular</title>
+<style type="text/css">
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+#container {
+	margin: 2% auto;
+	max-width: 600px;
+	min-width: 320px;
+	background: #f7f5e7;
+	}	
+#header {
+	width: 100%;
+	padding: 2% 0 2% 0;
+	text-align: center;
+	background: #f6f3e2;
+	}
+#text {
+	width: 80%;
+	margin: 2% 10% 3% 10%;	
+	font-size: 0.95em;
+	font-weight: 400;
+	text-align: center;	
+	text-align:justify;	
+}
+#search {
+	width: 84%;
+	margin: 0% 8% 0% 8%;
+	padding: 0px 0px 0px 5px;
+	border: 1px solid #d4d0ba;
+	font-size: 1em;
+	height: 26px;
+}
+input:focus {
+	outline:none;
+}
+#footer {
+	width: 100%;
+	margin: 2% 0% 0% 0%;
+	padding: 0% 0% 2% 0%;
+    text-align: center;	
+	}
+#plakette {
+	float: left;
+	margin: 1% 0% 0% 0%;
+}
+.hidden {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+}	
+h1 { 
+	font-size: 1.8em;
+	font-weight: 600;
+	}
+fieldset {
+	margin: 0;
+	padding: 0;
+    border: 0;
+}
+</style>
+</head>
+<body>
+<div id="container">
+  <div id="header"><h1>Barrierefreies Suchformular</h1></div>
+  <div id="text"><p>Nach Eingabe eines Suchbegriffs und Anklicken des Buttons &bdquo;Artikelsuche&ldquo; wird ein Wikipedia-Artikel angezeigt. Bei Anklicken des Buttons &bdquo;Volltextsuche&ldquo; wird eine Wikipedia-Trefferliste angezeigt.</p></div>
+<form action="http://de.wikipedia.org/wiki/Spezial:Suche">
+  <p><label for="search" class="hidden">Suchfeld</label></p>	
+  <fieldset>
+  <legend class="hidden">Suchen</legend>
+  <input type="text" name="search" id="search" value="" />
+<div id="footer">
+    <input type="submit" style="font-size: 0.9em; font-weight: 600" name="go" id="go" value="Artikelsuche" />
+    <input type="submit" style="font-size: 0.9em; font-weight: 600" name="fulltext" id="fulltext" value="Volltextsuche" />
+</div>
+  </fieldset>
+  <div id="plakette"><a href="http://wave.webaim.org/report#/http%3A%2F%2Ftadeuszchmielewski.com%2Fthm%2Fformular_wikipedia-2.html"><img height="32" width="88" src="http://www.w3.org/WAI/wcag2AAA"
+          alt="Level Triple-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0" /></a></div>
+</form>          
+</div>
+</body>
+</html>
